@@ -1,22 +1,22 @@
 /****
-libreTSPSWP - a toolkit for sensing people in space with phones.
-With libreTSPSWP you will be able to harness the computing power of your phone to sense people in space and broadcast the result to a Processing sketch.. 
-You can download the app here: https://itunes.apple.com/us/app/libretspswp/id1276040950?mt=8
+tramontanaCV - a toolkit for sensing people in space with phones.
+With tramontanaCV you will be able to harness the computing power of your phone to sense people in space and broadcast the result to a Processing sketch.. 
+You can download the app here: https://itunes.apple.com/us/app/libreTSPSWP/id1276040950?mt=8
 made by Pierluigi Dalla Rosa
 ***/
 
 import websockets.*;
 
-import libreTSPSWP.*;
+import tramontanaCV.*;
 
 
 
-libreTSPSWP hello;
+tramontanaCV hello;
 LBlobsContainer container;
 
 void setup(){
   size(320,576);
-  hello = new libreTSPSWP(this, "192.168.1.13");
+  hello = new tramontanaCV(this, "192.168.1.11");
   hello.isVerbose = true;
 }
 void draw(){

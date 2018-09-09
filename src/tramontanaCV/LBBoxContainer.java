@@ -1,4 +1,4 @@
-package libreTSPSWP;
+package tramontanaCV;
 
 public class LBBoxContainer {
 	public LBBox[] bboxes;

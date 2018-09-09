@@ -1,4 +1,4 @@
-package libreTSPSWP;
+package tramontanaCV;
 
 public class LBlobsContainer {
 	public LBlob[] blobs;

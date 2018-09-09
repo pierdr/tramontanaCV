@@ -1,4 +1,4 @@
-package libreTSPSWP;
+package tramontanaCV;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.URI;
@@ -12,23 +12,22 @@ import org.eclipse.jetty.websocket.api.annotations.WebSocket;
 import org.eclipse.jetty.websocket.client.ClientUpgradeRequest;
 import org.eclipse.jetty.websocket.client.WebSocketClient;
 
-import libreTSPSWP.LBlob;
+import tramontanaCV.LBlob;
 import processing.core.PApplet;
 import processing.data.JSONArray;
 import processing.data.JSONObject;
 import java.util.ArrayList;
-import libreTSPSWP.BVector;
+import tramontanaCV.BVector;
 /**
  * 
  * 
- * @example Hello 
  * 
  * 
  */
 
 
 @WebSocket
-public class libreTSPSWP {
+public class tramontanaCV {
 	//WEBSOCKET UTILS
 	private Session session;
 	CountDownLatch latch = new CountDownLatch(1);
@@ -47,12 +46,13 @@ public class libreTSPSWP {
 	private int index;
 	private Method onBoundingBoxReceived;
 	private Method onBlobsReceived;
+	private Method onFrameReceived;
 	
 	//UTILS
 	public boolean isVerbose = false;
 	
 	
-	public libreTSPSWP(PApplet parent,String IP){
+	public tramontanaCV(PApplet parent,String IP){
 		sketch = parent;
 		ipAddress = IP;
 		port = 9088;
@@ -80,12 +80,23 @@ public class libreTSPSWP {
         		
         		printLog("Method onBlobsReceived not found.");
         }
+		//ON FRAME RECEIVED
+		try {
+			Class<?> params[] = new Class[2];
+			params[0] = processing.core.PImage.class;
+			params[1] = String.class;
+			
+			onFrameReceived = parent.getClass().getMethod("onFrameReceived", params);
+        } catch (Exception e) {
+        		
+        		printLog("Method onFrameReceived not found.");
+        }
 		
 		/* WEBSOCKET START */
 		connectToSocket("ws://"+IP+":"+port);
 		
 	}
-//	public libreTSPSWP(PApplet parent,String IP,int Port)
+//	public tramontanaCV(PApplet parent,String IP,int Port)
 //	{
 //		this(parent,IP);
 //		this.port = Port;

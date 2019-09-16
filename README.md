@@ -1,19 +1,26 @@
 
+
+
 ## tramontanaCV
 #### a toolkit for sensing people in space with phones.
 
 ###### Designed for interactive spaces, interactive environments, interactive objects, prototyping.
 
-<img width="160px" src="http://transit7.cargocollective.com/1/23/757295/13019034/Screen-Shot-2017-08-27-at-5.57.33-PM.png" alt=""><span> </span><img width="160px" src="http://payload535.cargocollective.com/1/23/757295/13019034/Screen-Shot-2017-08-27-at-5.56.49-PM_640.png" alt="">
 
-tramontanaCV is part of the **[tramontana project](http://www.tramontana.xyz)**. 
+
+
+ </span><img width="800px" src="https://files.cargocollective.com/757295/tcv.jpg" alt="">
+
+## tramontanaCV is part of **[tramontana.xyz](http://www.tramontana.xyz)** please look there for most updated documentation. 
+
 
 ###### In Short:
 tramontana leverages the capabilities of the object that we have all come to carry with us anywhere, all the time, our smartphones. 
 
 With tramontanaCV you will be able to harness the computing power of your phone to sense people in space and broadcast the result to a [Processing](https://processing.org). sketch.. 
-You can download the app here: https://itunes.apple.com/us/app/libretspswp/id1276040950?mt=8
-made by [Pierluigi Dalla Rosa](http://www.pierdr.com).
+You can download the app [here](https://itunes.apple.com/us/app/libretspswp/id1276040950?mt=8).
+
+iOS app made by [Pierluigi Dalla Rosa](http://www.pierdr.com).
 
 
 

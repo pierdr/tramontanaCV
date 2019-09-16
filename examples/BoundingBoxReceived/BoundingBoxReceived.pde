@@ -9,7 +9,7 @@ import websockets.*;
 import tramontanaCV.*;
 
 tramontanaCV hello;
-LBBoxContainer container;
+TBBoxContainer container;
 
 
 void setup(){
@@ -30,6 +30,6 @@ void draw(){
     }
   }
 }
-void onBoundingBoxReceived(LBBoxContainer c, int nBlobs, String ip){
+void onBoundingBoxReceived(TBBoxContainer c, int nBlobs, String ip){
   container = c;
 }

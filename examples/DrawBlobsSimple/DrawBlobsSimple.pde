@@ -12,7 +12,7 @@ import tramontanaCV.*;
 
 
 tramontanaCV hello;
-LBlobsContainer container;
+TBlobsContainer container;
 
 void setup(){
   size(320,576);
@@ -29,6 +29,6 @@ void draw(){
     }
   }
 }
-void onBlobsReceived(LBlobsContainer c, int nBlobs, String ip){
+void onBlobsReceived(TBlobsContainer c, int nBlobs, String ip){
   container = c;
 }

@@ -29,6 +29,6 @@ void draw(){
   fill(246, 171, 154, 80 );
   ellipse(160,200,map(nBlobs,0,15,0,100),map(nBlobs,0,15,0,100));
 }
-void onBlobsReceived(LBlobsContainer c, int nBlobs, String ip){
+void onBlobsReceived(TBlobsContainer c, int nBlobs, String ip){
   this.nBlobs = nBlobs;
 }
